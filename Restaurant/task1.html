@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/logo.png">
+  <link rel="stylesheet" href="./assets/task1.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Egyptian Restaurant</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <img class="logoImg" src="./assets/logo.png" />
+      <div class="logo">Egyptian Restaurant</div>
+      <ul class="navLi">
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#restaurant">Restaurant</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservation">Reservation</a></li>
+        <li><a href="#location">Our Location</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="home-section" id="home">
+    <img src="./assets/restaurant.jpg" alt="restaurant photo" />
+    <div class="text">
+      <p>Welcome to Egyptian Restaurant</p>
+    </div>
+  </section>
+  <section class="restaurant-section" id="restaurant">
+    <p class="titleSection">~ Restaurant ~</p>
+    <div class="FirstSection">
+      <div class="container">
+        <div class="textFirst">
+          <p class="title">Location</p>
+          <p class="body">Looking for a restaurant with a view? Look no further than this incredible dining
+            establishment overlooking the Nile River and Cairo Tower! Located in the heart of a bustling city, this
+            restaurant is easily accessible by foot, car, or public transportation. Once you arrive, you'll be greeted
+            by stunning panoramic views of the river and tower that are sure to take your breath away.</p>
+          <p class="title">A Unique Experience</p>
+          <p class="body">This restaurant overlooking the Nile River and Cairo Tower is not only a great place to dine,
+            but it's also an ideal location for taking photos. With its stunning panoramic views of the river and tower,
+            as well as its sleek and modern design, the restaurant provides the perfect backdrop for capturing beautiful
+            images and creating lasting memories.</p>
+        </div>
+        <div class="imageFirst">
+          <img src="./assets/location.jpg" />
+        </div>
+      </div>
+    </div>
+    <div class="SecondSection">
+      <div class="container">
+        <div class="textSecond">
+          <p class="title">Staff</p>
+          <p class="body">The restaurant also has a well-trained support staff who work behind the scenes to ensure that
+            everything runs smoothly. From the kitchen staff to the cleaners and maintenance personnel, everyone plays a
+            vital role in creating a welcoming and comfortable atmosphere for guests.</p>
+          <p class="title">Decoration</p>
+          <p class="body">The restaurant's design and decor are inspired by the stunning natural beauty of the Nile
+            River and the iconic Cairo Tower. Large windows and open-air seating areas offer breathtaking views of these
+            landmarks, creating a sense of tranquility and calm that is rare in a bustling city like Cairo.</p>
+        </div>
+        <div class="imageSecond">
+          <img src="./assets/cuisine.jpg" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="menuSection" id="menu">
+    <p class="titleSection">~ Menu ~</p>
+    <div class="card-container">
+      <div class="card">
+        <img src="./assets/koshari.jpg" alt="koshari" class="card-image">
+        <div class="card-content">
+          <h2 class="card-title">~ MAIN DISH ~</h2>
+          <ul class="card-text">
+            <li>koshari---------------------20L.E</li>
+            <li>Hamam Mahshi------------80L.E</li>
+            <li>Shawarma------------------45L.E</li>
+            <li>Kofta------------------------70L.E</li>
+            <li>Kebab-----------------------90L.E</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/Molokhia.jpg" alt="Molokhia" class="card-image">
+        <div class="card-content">
+          <h2 class="card-title">~ SOUP ~</h2>
+          <ul class="card-text">
+            <li>Molokhia -------------------25L.E</li>
+            <li>Tomato Cream Soup-------20L.E</li>
+            <li>Seafood Soup--------------45L.E</li>
+            <li>Lesan EL Asfour Soup------15L.E</li>
+            <li>Lentil Soup-----------------15L.E</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./assets/om ali.jpg" alt="om ali" class="card-image">
+        <div class="card-content">
+          <h2 class="card-title">~ DESSERT ~</h2>
+          <ul class="card-text">
+            <li>Om Ali----------------------35L.E</li>
+            <li>Basbosa---------------------40L.E</li>
+            <li>Konafa----------------------40L.E</li>
+            <li>Atayef----------------------20L.E</li>
+            <li>Roz Belaban----------------12L.E</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="reservation-section" id="reservation">
+    <p class="titleSection">~ Reservation ~</p>
+    <img src="./assets/openingTime.jpg">
+    <form action="">
+      <div class="form-container">
+        <div class="reserve">
+          <p>Reserve</p>
+          <label for="date">Date</label>
+          <input type="date" required>
+          <label for="timeTable">TimeTables</label>
+          <input type="time" required>
+          <label for="noOfGuests">Number of Guests</label>
+          <input type="number" placeholder="Number of Guests" min="1" required>
+        </div>
+        <div class="Details">
+          <p>Details</p>
+          <label for="name">Name</label>
+          <input type="text" placeholder="Name" required>
+          <label for="email">Email</label>
+          <input type="email" placeholder="Email" required>
+          <label for="phone">Phone</label>
+          <input type="tel" placeholder="Phone" required>
+        </div>
+        <div class="bottom-section">
+          <label for="further requests">Further Requests</label>
+          <textarea name="further requests" rows="4" cols="50" placeholder="further requests"></textarea>
+          <button>Reserve</button>
+        </div>
+      </div>
+    </form>
+  </section>
+  <section class="location-section" id="location">
+    <p class="titleSection">~ Our Location ~</p>
+    <div class="mapContainer">
+      <iframe src="https://www.google.com/maps/d/embed?mid=1ksBysRv_ZSolbXZfUY7bqdJDYXM&hl=en_US&ehbc=2E312F"
+        width="200" height="300"></iframe>
+      <div class="location">
+        <p class="theTitle">Address:</p>
+        <p class="ans">16 St., Zamalek, Cairo, Egypt</p>
+        <br>
+        <p class="theTitle">Email:</p>
+        <p class="ans">mail@example.com</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p style="display: inline;">Follow US: </p>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <p>copy<span>&copy;</span>2023</p>
+  </footer>
+  <script>
+    window.onscroll = () => {
+      var current = "";
+      const sections = document.getElementsByTagName("section");
+      const sectionHeight = window.innerHeight;
+      const navLi = document.querySelectorAll("nav ul li");
+      for (let i = 0; i < sections.length; i++) {
+        const sectionTop = sections[i].getBoundingClientRect().top;
+        if (sectionTop <= sectionHeight / 2) {
+          current = sections[i].getAttribute("id");
+        }
+      }
+      navLi.forEach((li) => {
+        const link = li.querySelector("a");
+        li.classList.remove("active");
+        if (link.href.includes(current)) {
+          li.classList.add("active");
+        }
+      });
+    };
+  </script>
+</body>
+
+</html>
